@@ -1,0 +1,237 @@
+<mat-toolbar color="primary">
+  <span style="margin-left:45%;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:xx-large;">EFFIZIENT</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<div  style="background-color: rgb(33, 104, 203);" >
+<mat-card style="margin-top: 1%;margin-bottom: 1%;">
+  <mat-card-content style="justify-content:center ;"><p style="text-align: center;"> Fill the questionnare for the student.After submitting,you will recieve an email at the
+    email address that you provided with a customised state of purpose for you.<br>You can modify it as 
+    per your needs.
+    If you would like to get it edited,reviewed,or drafted by our experts,you can get in touch
+    with us:<a href="https://effizient-immigration-inc.square.site/s.shop">http://effizient-immigration-inc.square.site/s.shop
+    </a></p></mat-card-content> 
+    <!--email change-->
+</mat-card>
+</div>
+
+<div style="background-color: rgb(33, 104, 203);background-image:url(../assets/niagara-falls-waterfall-horseshoe-158398.jpeg);" >
+  <!-- <video autoplay loop muted plays-inline>
+    <source src="https://www.youtube.com/watch?v=y-FTQZXxJtk" type="video/mp4">
+  </video> -->
+  <mat-card style="margin-left:20%;margin-right: 20%;margin-top: 1%;" >
+    <mat-card-title-group style="margin-left: 38%;" >
+      <mat-card-title style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 25px;">Customised SOP Generator</mat-card-title>
+      <mat-card-subtitle style="margin-left: 25%;">Fill the fields below</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-content style="margin-top:1.5%;margin-left: 30%;">
+
+<form [formGroup]="visaForm">
+
+      <div class="form-control" >
+    <div class="example-container">
+      <h4>Email</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <mat-label>Answer</mat-label>
+        <input matInput placeholder="pat@example.com" formControlName="Email" required>
+        <mat-error>required field or wrong mail entered</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+
+  <div class="form-control">
+    <div class="example-container">
+      <h4>Full Name</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <mat-label>Answer</mat-label>
+        <input matInput placeholder="Full Name" formControlName="Name" required>
+        <mat-error>required field or wrong mail entered</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="form-control">
+    <div class="example-container">
+      <h4>Age</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <mat-label>Answer</mat-label>
+        <input matInput placeholder="age number" formControlName="Age" required>
+        <mat-error >required field or wrong mail entered</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="form-control" > 
+    <div class="example-container">
+      <h4>Highest Level of Education</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+       <mat-label>Choose</mat-label>
+       <mat-select required>
+         <mat-option value="Grade 12">Grade 12</mat-option>
+         <mat-option value="Diploma">Diploma</mat-option>
+         <mat-option value="Bachelors Degree">Bachelors Degree</mat-option>
+         <mat-option value="Masters Degree">Masters Degree</mat-option>
+      </mat-select>
+     </mat-form-field>
+   </div>
+  </div>
+
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>Institute where you completed your highest level of education</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Institute" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>What did you Study</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Study" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>Do you have any relevant work experience?<br>Write none if no work experience.Provide the following details if yes<br>
+        <ul><li>Job Title</li>
+        <li>Company Name</li><li>
+          Job Duties
+        </li></ul>
+        Sample Answer:I worked as a sales manager at effizient immigration inc<br> from Jan 2022 till Feb 2023.In this role,I managed sales operations,<br>reaching out to leads,lead the outreach program,ensured meeting<br> monthly targets.
+       </h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="work" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>What Institute did you study in Canada?</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="canada" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>Which Country are you applying from?</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="country" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>Future Goals?</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Goal" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>English Scores - Listening</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Goal" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>English Scores - Listening</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Listening" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>English Scores - Reading</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Reading" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>English Scores - Speaking</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Speaking" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>English Scores - Writing</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="Writing" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>Did you pay your first year Tution</h4>
+      <mat-radio-group style="width: 50%;margin-bottom:1%" [(ngModel)]="labelPosition1" formControlName="firstYear" required>
+        <mat-radio-button  value="Yes">Yes</mat-radio-button>
+        <mat-radio-button  value="No">No</mat-radio-button>
+      </mat-radio-group>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>How much Tuition did you pay?</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="tuition" required>
+     </mat-form-field>
+   </div>
+  </div>
+
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>Did you do a GIC?</h4>
+      <mat-radio-group [(ngModel)]="labelPosition" formControlName="pay" required>
+        <mat-radio-button  value="Yes">Yes</mat-radio-button>
+        <mat-radio-button  value="No">No</mat-radio-button>
+      </mat-radio-group>
+   </div>
+  </div>
+
+  <div class="form-control" >
+    <div class="example-container">
+      <h4>How much did you pay towards GIC?</h4>
+      <mat-form-field style="width: 50%;margin-bottom:1%">
+        <input matInput placeholder="Answer" formControlName="PayGIC" required>
+     </mat-form-field> 
+   </div>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit" (click)="send()">Submit</button>
+</form>
+</mat-card-content>
+</mat-card>
+
+
+</div>
+
+
+
+
+
+
+
